@@ -1,0 +1,17 @@
+{
+ "locked": {
+  ".gitignore": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+  "AGENTS.md": "b03e8e2919617576ea9f204952d02c9fc57ed056a35eb6acbd3f7592efa1fc76",
+  "CLAUDE.md": "b03e8e2919617576ea9f204952d02c9fc57ed056a35eb6acbd3f7592efa1fc76",
+  "MINER-AGENT.md": "81445273b1d167a14399b0969d325d948ac185f5857ee95cf0c056ff9a2088f8",
+  "README.md": "802db800c2cb0159c8c5c4a306b2b883b4efc911a256cea34271a2e6075989c2",
+  "eval_adapter.py": "46f9f1de7c7c1acbb50e714222b3cf4519180ba83d4f7d8bf1d61d03cdfb3328",
+  "oc-harness.config.json": "2f7985b35ce3a3bab9b924a0a5d88e5709fa494cf3ad2dbd2b01baf33cf8b409",
+  "payload-schema.json": "3ac4a1e57e6826ce4aca9004496a3e5dd4f8b84ee1b0d1dc13f129d1bf4aca0c",
+  "pinned/router-weights.json": "2c2898146f26ab12edf6f6eecc52c6aadcd47215f2d3e6d05230d2f1130cdba8",
+  "router-pin.json": "3a68f15fab3d451b18e5de2072241bb08f29dcd7abefa7f5dddf5a550202d56e",
+  "scripts/check_submission.py": "37d5a5375e5672901f923b5d538d580b3e043da40f21a60c7afb7ca0ad099fcf",
+  "scripts/gen_manifest.py": "dd0621002ca365ab3a2f20a0e31effd35af98d7373d6e00ab26e8e372129bf43",
+  "scripts/self_score.sh": "989d0fb1a2f085729d76349c166c1a64babc772117aa6fef3b06a225b97a9797"
+ }
+}
