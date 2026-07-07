@@ -9,11 +9,14 @@ import hashlib
 import json
 import os
 import re
+import subprocess
 import sys
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 sys.path.insert(0, os.path.join(ROOT, "..", "oc-eval"))
-sys.path.insert(0, ROOT)
+sys.path.append(ROOT)  # appended so miner files never shadow oc_eval
+
+UNLOCKED_PREFIXES = ("harness/", "runs/")
 
 
 def fail(msg: str) -> int:
@@ -38,13 +41,23 @@ def check_payload(path: str) -> str | None:
 def check_locked_files() -> str | None:
     with open(os.path.join(ROOT, "manifest.json")) as f:
         locked = json.load(f)["locked"]
-    for path, expected in locked.items():
+    # Enumerate the git tree, not just the manifest — a dropped manifest entry
+    # then shows up as an unlisted file in the locked area (see oc-router).
+    tracked = subprocess.run(["git", "-C", ROOT, "ls-files"], capture_output=True, text=True).stdout.split()
+    for path in tracked:
+        if path == "manifest.json" or path.startswith(UNLOCKED_PREFIXES):
+            continue
         full = os.path.join(ROOT, path)
+        if path not in locked:
+            return f"unlisted file in locked area (manifest tampered?): {path}"
         if not os.path.exists(full):
             return f"locked file deleted: {path}"
         with open(full, "rb") as f:
-            if hashlib.sha256(f.read()).hexdigest() != expected:
+            if hashlib.sha256(f.read()).hexdigest() != locked[path]:
                 return f"locked file modified: {path}"
+    missing = [p for p in locked if not os.path.exists(os.path.join(ROOT, p))]
+    if missing:
+        return f"locked file deleted: {missing[0]}"
     return None
 
 

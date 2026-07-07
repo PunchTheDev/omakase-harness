@@ -22,14 +22,15 @@ import sys
 from dataclasses import dataclass, field
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+# Bind oc_eval BEFORE the miner's repo root is importable, so a miner-added
+# oc_eval/ package in harness/ cannot shadow the real scoring modules.
 sys.path.insert(0, os.path.join(ROOT, "..", "oc-eval"))
-sys.path.insert(0, ROOT)
-
 from oc_eval import frontier, routers, score, stats, suites  # noqa: E402
 from oc_eval.engine import Budget, Step, TaskResult  # noqa: E402
 from oc_eval.actions import Call  # noqa: E402
 from oc_eval.workers import Pool  # noqa: E402
 
+sys.path.append(ROOT)  # appended, not inserted — miner files never win a name race
 import harness  # noqa: E402 — the mutable package under test
 
 BASELINE_PATH = os.path.join(ROOT, "runs", "main-baseline.json")
