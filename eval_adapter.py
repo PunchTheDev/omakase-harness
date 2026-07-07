@@ -42,9 +42,9 @@ def load_pinned_router() -> routers.TinyRouter:
     return routers.TinyRouter.load(path)
 
 
-def run_harness(pool: Pool, split: str, seed: int) -> list[engine.TaskResult]:
+def run_harness(pool: Pool, split: str, seed: int, per_suite: int) -> list[engine.TaskResult]:
     router = load_pinned_router()
-    tasks = suites.generate_split(split, seed)
+    tasks = suites.generate_split(split, seed, per_suite)
     budget = engine.Budget()
     return [harness.run_task(router, t, pool, seed, split, budget) for t in tasks]
 
@@ -60,6 +60,7 @@ def main() -> int:
     ap.add_argument("--pool", required=True)
     ap.add_argument("--split", default="dev")
     ap.add_argument("--seed", type=int, default=1)
+    ap.add_argument("--per-suite", type=int, default=40, help="tasks per suite; gate splits use more than dev")
     ap.add_argument("--rebaseline", action="store_true",
                     help="store this run as main's baseline (maintainer, post-merge/reset only)")
     ap.add_argument("--out")
@@ -67,22 +68,22 @@ def main() -> int:
     args = ap.parse_args()
 
     pool = Pool.from_config(args.pool)
-    results = run_harness(pool, args.split, args.seed)
+    results = run_harness(pool, args.split, args.seed, args.per_suite)
     axes = score.axes(results)
     vector = score.correctness_vector(results)
 
     if args.rebaseline:
         os.makedirs(os.path.dirname(BASELINE_PATH), exist_ok=True)
         with open(BASELINE_PATH, "w") as f:
-            json.dump({"split": args.split, "seed": args.seed, "vector": vector,
-                       "axes": axes.__dict__}, f)
+            json.dump({"split": args.split, "seed": args.seed, "per_suite": args.per_suite,
+                       "vector": vector, "axes": axes.__dict__}, f)
         print(f"main baseline stored: accuracy {axes.accuracy:.3f}")
         return 0
 
     with open(BASELINE_PATH) as f:
         base = json.load(f)
-    if (base["split"], base["seed"]) != (args.split, args.seed):
-        raise SystemExit("baseline was computed for a different (split, seed)")
+    if (base["split"], base["seed"], base.get("per_suite", 40)) != (args.split, args.seed, args.per_suite):
+        raise SystemExit("baseline was computed for a different (split, seed, per_suite)")
 
     cmp_ = stats.compare(vector, [bool(x) for x in base["vector"]])
     cost_ok = axes.cost_per_task <= base["axes"]["cost_per_task"] * COST_TOLERANCE
