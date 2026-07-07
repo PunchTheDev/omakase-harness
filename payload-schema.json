@@ -1,0 +1,22 @@
+{
+  "$comment": "The single fenced JSON block every OC-H PR body must contain.",
+  "type": "object",
+  "required": ["competition", "hotkey", "github_login", "claimed_delta", "self_score", "signature"],
+  "additionalProperties": false,
+  "properties": {
+    "competition": {"const": "oc-harness"},
+    "hotkey": {"type": "string", "minLength": 46, "maxLength": 50},
+    "github_login": {"type": "string"},
+    "claimed_delta": {"type": "number", "$comment": "accuracy delta vs main from your self-score"},
+    "self_score": {
+      "type": "object",
+      "required": ["accuracy", "split", "seed"],
+      "properties": {
+        "accuracy": {"type": "number", "minimum": 0, "maximum": 1},
+        "split": {"type": "string"},
+        "seed": {"type": "integer"}
+      }
+    },
+    "signature": {"type": "string", "$comment": "Hotkey signature over sha256(competition|hotkey|head_sha)."}
+  }
+}
