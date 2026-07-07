@@ -1,0 +1,14 @@
+{
+ "competition": "oc-harness",
+ "split": "dev",
+ "seed": 1,
+ "n_tasks": 450,
+ "accuracy": 0.9333,
+ "baseline_accuracy": 0.8978,
+ "delta": 0.0356,
+ "p_value": 3.1e-05,
+ "cost_per_task": 0.0384,
+ "cost_ok": true,
+ "tier": "major-delta",
+ "passed": true
+}
