@@ -49,9 +49,16 @@ def check_locked_files() -> str | None:
 
 
 def check_harness() -> str | None:
-    # static pass: no raw sockets / subprocess / urllib in the mutable package —
-    # workers are reachable only through the injected pool client
-    banned = re.compile(r"\b(socket|subprocess|urllib|requests|httpx|http\.client)\b")
+    # static pass — two families of banned primitives in the mutable package:
+    # network/process (workers only via the injected pool) and answer
+    # reconstruction (suites generators, mock internals, file/dynamic-import
+    # escapes). A speed bump, not a wall: production containment is the sealed
+    # runtime that simply doesn't contain answer material.
+    banned = re.compile(
+        r"\b(socket|subprocess|urllib|requests|httpx|http\.client"
+        r"|suites|mockpool|task_by_id|generate_split|knows"
+        r"|importlib|__import__|eval|exec|open|globals|vars)\b"
+    )
     for dirpath, _, files in os.walk(os.path.join(ROOT, "harness")):
         for name in files:
             if name.endswith(".py"):

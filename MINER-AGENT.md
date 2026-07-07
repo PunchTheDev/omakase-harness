@@ -21,12 +21,17 @@ Identical to [oc-router MINER-AGENT.md §1](../oc-router/MINER-AGENT.md)
 
 - Mutable: **`harness/` only**. Everything else is hash-locked
   (`main:manifest.json` — inverted Gate 2).
-- `harness` must export `run_task(router, task, pool, run_seed, split, budget)
-  -> oc_eval.engine.TaskResult`. See `harness/__init__.py`.
-- The router is opaque; workers are reachable **only** through `pool`.
-  Raw network/process primitives in `harness/` are a static-gate reject
+- `harness` must export `run_task(router, view, pool, budget) -> str` — the
+  final answer text. See `harness/__init__.py` for the full contract.
+- `view` is redacted (id, suite, rendered prompt). You never see answers or
+  split seeds, grading is central, and tokens/cost are metered by the locked
+  adapter — self-reporting nothing is the design.
+- The router is opaque; workers are reachable **only** through
+  `pool.chat(worker, system, user)`. Network/process primitives and
+  answer-reconstruction primitives (suites generators, mock internals, file
+  I/O, dynamic imports) in `harness/` are a static-gate reject
   (`banned-primitive`). Dependencies are locked; propose new ones in an issue.
-- Budgets are enforced by the locked caller. Blowing `max_turns`/`max_tokens`
+- Budgets are enforced by the pool wrapper. Blowing `max_turns`/`max_tokens`
   forfeits the task — build inside them.
 
 ## 3. Where gains live (targeting intel, kept honest by the dashboard)

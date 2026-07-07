@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Locked scoring adapter for OC-H.
+"""Locked scoring adapter for OC-H (contract v2).
 
-Runs the mutable harness/ package over a split with the pinned champion router,
-pairs the result against main's stored baseline vector, and emits a delta-tier
-verdict. Miners cannot change this file (inverted Gate 2: here the harness is
-mutable and the eval surface is locked).
+The mutable harness never sees answers and never grades itself:
+- it receives a redacted TaskView (id, suite, rendered prompt) — no answer, no
+  options object, no split seed, so answers are not reconstructible;
+- all worker calls go through a metered, budget-enforcing pool wrapper that
+  injects eval metadata itself — tokens/cost/latency are measured here, not
+  self-reported;
+- the harness returns only its final answer string; grading is central.
 
 Usage:
     python eval_adapter.py --pool ../oc-eval/configs/pool.dev.json \
-        [--rebaseline] [--out runs/run.json] [--frontier runs/frontier.jsonl]
+        [--per-suite 150] [--rebaseline] [--out runs/run.json] [--frontier runs/frontier.jsonl]
 """
 from __future__ import annotations
 
@@ -16,12 +19,15 @@ import argparse
 import json
 import os
 import sys
+from dataclasses import dataclass, field
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(ROOT, "..", "oc-eval"))
 sys.path.insert(0, ROOT)
 
-from oc_eval import engine, frontier, routers, score, stats, suites  # noqa: E402
+from oc_eval import frontier, routers, score, stats, suites  # noqa: E402
+from oc_eval.engine import Budget, Step, TaskResult  # noqa: E402
+from oc_eval.actions import Call  # noqa: E402
 from oc_eval.workers import Pool  # noqa: E402
 
 import harness  # noqa: E402 — the mutable package under test
@@ -33,6 +39,50 @@ TIERS = [("breakthrough", 0.08, 2.0), ("major-delta", 0.03, 1.0), ("minor-delta"
 COST_TOLERANCE = 1.15
 
 
+@dataclass(frozen=True)
+class TaskView:
+    """What the harness is allowed to know about a task."""
+
+    id: str
+    suite: str
+    prompt: str
+
+
+class BudgetExceeded(Exception):
+    pass
+
+
+@dataclass
+class ScopedPool:
+    """Metered pool facade: injects metadata, enforces budgets, records ground truth."""
+
+    inner: Pool
+    budget: Budget
+    _meta: dict = field(default_factory=dict)
+    steps: list[Step] = field(default_factory=list)
+    tokens: int = 0
+    cost: float = 0.0
+    latency_ms: float = 0.0
+
+    @property
+    def workers(self):
+        return self.inner.workers
+
+    def begin(self, task_id: str, split: str, seed: int) -> None:
+        self._meta = {"split": split, "seed": seed, "task_id": task_id}
+        self.steps, self.tokens, self.cost, self.latency_ms = [], 0, 0.0, 0.0
+
+    def chat(self, worker: str, system: str, user: str):
+        if len(self.steps) >= self.budget.max_turns or self.tokens >= self.budget.max_tokens:
+            raise BudgetExceeded
+        c = self.inner.chat(worker, system, user, metadata=self._meta)
+        self.steps.append(Step(Call(worker), c.text, c.tokens))
+        self.tokens += c.tokens
+        self.cost += c.cost
+        self.latency_ms += c.latency_ms
+        return c
+
+
 def load_pinned_router() -> routers.TinyRouter:
     with open(os.path.join(ROOT, "router-pin.json")) as f:
         pin = json.load(f)
@@ -42,11 +92,27 @@ def load_pinned_router() -> routers.TinyRouter:
     return routers.TinyRouter.load(path)
 
 
-def run_harness(pool: Pool, split: str, seed: int, per_suite: int) -> list[engine.TaskResult]:
+def run_harness(pool: Pool, split: str, seed: int, per_suite: int) -> list[TaskResult]:
     router = load_pinned_router()
-    tasks = suites.generate_split(split, seed, per_suite)
-    budget = engine.Budget()
-    return [harness.run_task(router, t, pool, seed, split, budget) for t in tasks]
+    budget = Budget()
+    scoped = ScopedPool(pool, budget)
+    results = []
+    for task in suites.generate_split(split, seed, per_suite):
+        view = TaskView(task.id, task.suite, suites.render_prompt(task, seed))
+        scoped.begin(task.id, split, seed)
+        try:
+            answer = harness.run_task(router, view, scoped, budget)
+        except BudgetExceeded:
+            answer = ""  # budget blown = forfeited task
+        except Exception:  # noqa: BLE001 — a crashing harness forfeits, never crashes the eval
+            answer = ""
+        results.append(TaskResult(
+            task.id, task.suite,
+            correct=bool(answer) and suites.grade(task, str(answer), seed),
+            tokens=scoped.tokens, cost=scoped.cost, latency_ms=scoped.latency_ms,
+            steps=scoped.steps, answer=str(answer),
+        ))
+    return results
 
 
 def tier_for(delta: float, significant: bool) -> str | None:
