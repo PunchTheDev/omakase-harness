@@ -8,8 +8,8 @@
   "eval_adapter.py": "7b36960468f4e3e079b3919afb3279013cf6f7b8e60399688752f13b0711f716",
   "oc-harness.config.json": "2f7985b35ce3a3bab9b924a0a5d88e5709fa494cf3ad2dbd2b01baf33cf8b409",
   "payload-schema.json": "3ac4a1e57e6826ce4aca9004496a3e5dd4f8b84ee1b0d1dc13f129d1bf4aca0c",
-  "pinned/router-weights.json": "2c2898146f26ab12edf6f6eecc52c6aadcd47215f2d3e6d05230d2f1130cdba8",
-  "router-pin.json": "3a68f15fab3d451b18e5de2072241bb08f29dcd7abefa7f5dddf5a550202d56e",
+  "pinned/router-weights.json": "9bab6f5016c77d383d9f35897d5360b67868b841d6809e23966de204d1ea2e97",
+  "router-pin.json": "c0beed3298dde3fb677370a0e48106d8298d063487e3264821b73f46714ea463",
   "scripts/check_submission.py": "37d5a5375e5672901f923b5d538d580b3e043da40f21a60c7afb7ca0ad099fcf",
   "scripts/gen_manifest.py": "dd0621002ca365ab3a2f20a0e31effd35af98d7373d6e00ab26e8e372129bf43",
   "scripts/self_score.sh": "989d0fb1a2f085729d76349c166c1a64babc772117aa6fef3b06a225b97a9797"

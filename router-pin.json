@@ -1,5 +1,5 @@
 {
- "source": "oc-router frontier seq 1 (genesis champion)",
- "weights_sha256": "2c2898146f26ab12edf6f6eecc52c6aadcd47215f2d3e6d05230d2f1130cdba8",
+ "source": "oc-router frontier seq 3 (champion v2)",
+ "weights_sha256": "9bab6f5016c77d383d9f35897d5360b67868b841d6809e23966de204d1ea2e97",
  "arch": "tiny-linear"
 }
