@@ -11,7 +11,7 @@
  "cost_ok": true,
  "tier": "major-delta",
  "passed": true,
- "transcript_sha256": "8acf797f379740334edef0059ac6d27eef96c15d4c83fce42983bed693fbd928",
+ "transcript_sha256": "ea5cf91578184ec42b93b19b9749ff840e3b374a2e806c769f8777ba4f2ea8a6",
  "pr": 1,
  "task_summary": [
   {
