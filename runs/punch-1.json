@@ -12,7 +12,6 @@
  "tier": "major-delta",
  "passed": true,
  "transcript_sha256": "4c7f54974f64c9dd1c81439f33ba19bd5c63fa6e5b58b1fd9008af6e03ad88a1",
- "pr": 1,
  "task_summary": [
   {
    "task_id": "dev-reasoning-0000",

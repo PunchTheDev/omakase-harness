@@ -7,8 +7,8 @@ cost stays in band.
 """
 from __future__ import annotations
 
-from oc_eval import templates
-from oc_eval.actions import Call
+from omakase_eval import templates
+from omakase_eval.actions import Call
 
 HEDGE = "possibly"
 SECOND_OPINION = "generalist-mock"  # broadest solo profile in the pinned pool

@@ -1,5 +1,5 @@
 {
-  "competition": "oc-harness",
+  "competition": "omakase-harness",
   "artifact": "harness/",
   "router_pin": "router-pin.json",
   "eval": {

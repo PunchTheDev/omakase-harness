@@ -1,5 +1,5 @@
 {
- "competition": "oc-harness",
+ "competition": "omakase-harness",
  "split": "dev",
  "seed": 1,
  "n_tasks": 450,

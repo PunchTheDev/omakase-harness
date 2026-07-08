@@ -3,11 +3,11 @@
 # judgment the canonical rerun applies. Boots a throwaway mock pool.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-EVAL=../oc-eval
+EVAL=../omakase-eval
 PY=$EVAL/.venv/bin/python
 [ -x "$PY" ] || PY=python3
 
-$PY -m oc_eval.cli mockpool --port 8100 & POOL_PID=$!
+$PY -m omakase_eval.cli mockpool --port 8100 & POOL_PID=$!
 trap 'kill $POOL_PID 2>/dev/null' EXIT
 sleep 0.3
 

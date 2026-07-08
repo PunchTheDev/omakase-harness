@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Gates 1–3 self-check for OC-H: payload shape, locked-file integrity, harness sanity.
 
-Exit 0 = submit; nonzero = the printed reason is what Peggy would reject with.
+Exit 0 = submit; nonzero = the printed reason is what Punch would reject with.
 """
 from __future__ import annotations
 
@@ -13,8 +13,8 @@ import subprocess
 import sys
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-sys.path.insert(0, os.path.join(ROOT, "..", "oc-eval"))
-sys.path.append(ROOT)  # appended so miner files never shadow oc_eval
+sys.path.insert(0, os.path.join(ROOT, "..", "omakase-eval"))
+sys.path.append(ROOT)  # appended so miner files never shadow omakase_eval
 
 UNLOCKED_PREFIXES = ("harness/", "runs/")
 
@@ -42,7 +42,7 @@ def check_locked_files() -> str | None:
     with open(os.path.join(ROOT, "manifest.json")) as f:
         locked = json.load(f)["locked"]
     # Enumerate the git tree, not just the manifest — a dropped manifest entry
-    # then shows up as an unlisted file in the locked area (see oc-router).
+    # then shows up as an unlisted file in the locked area (see omakase-router).
     tracked = subprocess.run(["git", "-C", ROOT, "ls-files"], capture_output=True, text=True).stdout.split()
     for path in tracked:
         if path == "manifest.json" or path.startswith(UNLOCKED_PREFIXES):

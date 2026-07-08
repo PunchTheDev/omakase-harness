@@ -4,7 +4,7 @@
   "required": ["competition", "hotkey", "github_login", "claimed_delta", "self_score", "signature"],
   "additionalProperties": false,
   "properties": {
-    "competition": {"const": "oc-harness"},
+    "competition": {"const": "omakase-harness"},
     "hotkey": {"type": "string", "minLength": 46, "maxLength": 50},
     "github_login": {"type": "string"},
     "claimed_delta": {"type": "number", "$comment": "accuracy delta vs main from your self-score"},

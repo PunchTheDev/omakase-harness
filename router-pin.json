@@ -1,5 +1,5 @@
 {
- "source": "oc-router frontier seq 3 (champion v2)",
+ "source": "omakase-router frontier seq 3 (champion v2)",
  "weights_sha256": "9bab6f5016c77d383d9f35897d5360b67868b841d6809e23966de204d1ea2e97",
  "arch": "tiny-linear"
 }

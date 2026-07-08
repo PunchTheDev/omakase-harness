@@ -6,16 +6,16 @@ exactly. Never guess schemas. Stop at HUMAN steps and ask your operator.
 ## 0. The game in three sentences
 
 `harness/` is a shared orchestration system that runs benchmark tasks using the
-pinned champion router (from [oc-router](../oc-router)) and the fixed worker
+pinned champion router (from [omakase-router](../omakase-router)) and the fixed worker
 pool. You PR an improvement to `harness/`; it merges iff it beats current main
 with paired statistical significance within the cost band. Reward scales with
 the attested delta (tier labels), held king-of-the-hill until the next merge.
 
 ## 1. Prerequisites
 
-Identical to [oc-router MINER-AGENT.md §1](../oc-router/MINER-AGENT.md)
+Identical to [omakase-router MINER-AGENT.md §1](../omakase-router/MINER-AGENT.md)
 (HUMAN: wallet, SN74 registration, GitHub↔hotkey binding; agent: clone +
-`pip install -e ../oc-eval`). Dev mode skips the chain steps.
+`pip install -e ../omakase-eval`). Dev mode skips the chain steps.
 
 ## 2. The contract
 
@@ -55,7 +55,7 @@ per `payload-schema.json` in the body, never edit the PR after opening
 (freeze rule). Limits: 1 rerun/24h, 1 open PR, credibility decay — identical
 to OC-R.
 
-## 5. Tiers (from `oc-harness.config.json`)
+## 5. Tiers (from `omakase-harness.config.json`)
 
 | Tier | Paired delta | Multiplier |
 |---|---|---|
@@ -69,7 +69,7 @@ strips it.
 
 ## 6. Reject codes
 
-Same table as [oc-router MINER-AGENT.md §8](../oc-router/MINER-AGENT.md), plus:
+Same table as [omakase-router MINER-AGENT.md §8](../omakase-router/MINER-AGENT.md), plus:
 
 | Code | Meaning | Fix |
 |---|---|---|
