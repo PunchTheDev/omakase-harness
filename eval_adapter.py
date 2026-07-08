@@ -25,7 +25,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 # Bind oc_eval BEFORE the miner's repo root is importable, so a miner-added
 # oc_eval/ package in harness/ cannot shadow the real scoring modules.
 sys.path.insert(0, os.path.join(ROOT, "..", "oc-eval"))
-from oc_eval import frontier, routers, score, stats, suites  # noqa: E402
+from oc_eval import frontier, routers, score, stats, suites, transcripts  # noqa: E402
 from oc_eval.engine import Budget, Step, TaskResult  # noqa: E402
 from oc_eval.actions import Call  # noqa: E402
 from oc_eval.workers import Pool  # noqa: E402
@@ -132,9 +132,11 @@ def main() -> int:
                     help="store this run as main's baseline (maintainer, post-merge/reset only)")
     ap.add_argument("--out")
     ap.add_argument("--frontier")
+    ap.add_argument("--transcripts", help="dir for the content-addressed per-task transcript")
     args = ap.parse_args()
 
     pool = Pool.from_config(args.pool)
+    tasks = suites.generate_split(args.split, args.seed, args.per_suite)
     results = run_harness(pool, args.split, args.seed, args.per_suite)
     axes = score.axes(results)
     vector = score.correctness_vector(results)
@@ -164,10 +166,15 @@ def main() -> int:
         "cost_per_task": round(axes.cost_per_task, 4), "cost_ok": cost_ok,
         "tier": tier, "passed": tier is not None,
     }
+    tx = transcripts.build(tasks, results, args.seed,
+                           header={"competition": "oc-harness", "split": args.split, "seed": args.seed})
+    tx_dir = args.transcripts or (os.path.join(os.path.dirname(args.out), "transcripts") if args.out else "runs/transcripts")
+    blob["transcript_sha256"] = transcripts.write(tx, tx_dir)
+    task_summary = transcripts.summarize(tx)
     if args.out:
         os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
         with open(args.out, "w") as f:
-            json.dump(blob, f, indent=1)
+            json.dump({**blob, "task_summary": task_summary}, f, indent=1)
     if args.frontier:
         frontier.append(args.frontier, "run", blob)
 
