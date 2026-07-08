@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate manifest.json — Gate 2 authority, inverted for OC-H.
+"""Regenerate manifest.json — Gate 2 authority, inverted for Harness.
 
 Here the harness/ package is the mutable artifact and everything else
 (eval adapter, router pin, configs, docs) is locked. Maintainer-only.

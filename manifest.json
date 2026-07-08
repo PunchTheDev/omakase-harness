@@ -4,15 +4,15 @@
   ".gitignore": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
   "AGENTS.md": "b03e8e2919617576ea9f204952d02c9fc57ed056a35eb6acbd3f7592efa1fc76",
   "CLAUDE.md": "b03e8e2919617576ea9f204952d02c9fc57ed056a35eb6acbd3f7592efa1fc76",
-  "MINER-AGENT.md": "446c6387f7304fde9bf8e482c934e9b6a1bc1127e6d2f25cad3a446c155b6e37",
-  "README.md": "a7c20c6f0c7303bfb0bd313a58d0752823e6ade019ba8c5c730c7e98949b1484",
-  "eval_adapter.py": "953ced37a10980053591e58343bc0bbf3d0f46b5f02df9dab5124aecd72743b4",
+  "MINER-AGENT.md": "9381826e7fc5b3c31342b4459dcbee246dc443a6090c66f7741bbbdc79cd1c11",
+  "README.md": "2b833cb31a4062ede75634bca17f193655ed3dde723f5091ded2fb9ff801d87a",
+  "eval_adapter.py": "2c90c620229d0a6eb2d873c5c5e07d5e2d98b2e9b4a1544fe5e2564578ceff93",
   "omakase-harness.config.json": "29d3fe06cfa2bcccd6604f841229020a4e42a61ba9208f0965cf5c522e5bfc52",
-  "payload-schema.json": "7978821c122ec371ae1a87676e7824d9aa97f0284e54e2009f7c3c789ea18396",
+  "payload-schema.json": "22136f02bdd79334d40d5f1752129194602ec774d4d5abbdc388c3429bc5953e",
   "pinned/router-weights.json": "85debe8700ddd768737cfe627a82fa86beb350983763581b7e4d730024e93546",
   "router-pin.json": "fea734fb1d5f88e1370999689c32a75ed3212c1364a3209a0eedaddc22f68f08",
-  "scripts/check_submission.py": "6018f88d709b503209c3121462bf6638cf4db826101b96bdd44cd2ef60828af7",
-  "scripts/gen_manifest.py": "dd0621002ca365ab3a2f20a0e31effd35af98d7373d6e00ab26e8e372129bf43",
+  "scripts/check_submission.py": "d5a45b7414d8d6fe732ef62fbfef2bd81bfd4e272fccd397ed189f53abd3b43d",
+  "scripts/gen_manifest.py": "1ebda50adeb3fe385e4e3d4040c805d371463236a04ae66af7891ef32520b310",
   "scripts/self_score.sh": "930a1fdda39695a84902a5e6e702ab427ef90c880acc7fdce3782ee664697a33"
  }
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gates 1–3 self-check for OC-H: payload shape, locked-file integrity, harness sanity.
+"""Gates 1–3 self-check for Harness: payload shape, locked-file integrity, harness sanity.
 
 Exit 0 = submit; nonzero = the printed reason is what Punch would reject with.
 """

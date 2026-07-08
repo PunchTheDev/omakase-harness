@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Locked scoring adapter for OC-H (contract v2).
+"""Locked scoring adapter for Harness (contract v2).
 
 The mutable harness never sees answers and never grades itself:
 - it receives a redacted TaskView (id, suite, rendered prompt) — no answer, no

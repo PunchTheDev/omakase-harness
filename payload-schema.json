@@ -1,5 +1,5 @@
 {
-  "$comment": "The single fenced JSON block every OC-H PR body must contain.",
+  "$comment": "The single fenced JSON block every Harness PR body must contain.",
   "type": "object",
   "required": ["competition", "hotkey", "github_login", "claimed_delta", "self_score", "signature"],
   "additionalProperties": false,

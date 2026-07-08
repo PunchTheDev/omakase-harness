@@ -1,4 +1,4 @@
-"""The mutable harness package — the artifact OC-H miners evolve.
+"""The mutable harness package — the artifact Harness miners evolve.
 
 Contract v2 (locked, enforced by eval_adapter.py): expose
     run_task(router, view, pool, budget) -> str   # the final answer text

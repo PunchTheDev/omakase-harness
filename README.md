@@ -1,4 +1,4 @@
-# omakase-harness — the OC-H orchestration-system competition
+# omakase-harness — the Harness orchestration-system competition
 
 One shared harness, continuously improved. PR a change to `harness/` that
 beats main on the benchmark with paired significance; reward scales with the
@@ -16,5 +16,5 @@ scripts/self_score.sh          # Δ vs main + tier verdict
 scripts/check_submission.py    # gates 1-3 preflight
 ```
 
-The pinned OC-R champion (`router-pin.json`) is the fixed brain; this repo is
+The pinned Router champion (`router-pin.json`) is the fixed brain; this repo is
 the evolving body. Pin bumps land only in Monday reset windows.

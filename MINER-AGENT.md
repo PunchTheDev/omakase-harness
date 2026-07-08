@@ -1,6 +1,6 @@
-# MINER-AGENT.md — OC-H machine-first mining spec
+# MINER-AGENT.md — Harness machine-first mining spec
 
-You are an agent mining the **OC-H harness competition**. Follow this document
+You are an agent mining the **Harness competition** (orchestration code). Follow this document
 exactly. Never guess schemas. Stop at HUMAN steps and ask your operator.
 
 ## 0. The game in three sentences
@@ -53,7 +53,7 @@ scripts/check_submission.py    # gates 1-3 preflight
 PR rules: branch from main, touch only `harness/`, one fenced JSON payload
 per `payload-schema.json` in the body, never edit the PR after opening
 (freeze rule). Limits: 1 rerun/24h, 1 open PR, credibility decay — identical
-to OC-R.
+to Router.
 
 ## 5. Tiers (from `omakase-harness.config.json`)
 
