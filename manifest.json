@@ -8,8 +8,8 @@
   "eval_adapter.py": "953ced37a10980053591e58343bc0bbf3d0f46b5f02df9dab5124aecd72743b4",
   "omakase-harness.config.json": "29d3fe06cfa2bcccd6604f841229020a4e42a61ba9208f0965cf5c522e5bfc52",
   "payload-schema.json": "7978821c122ec371ae1a87676e7824d9aa97f0284e54e2009f7c3c789ea18396",
-  "pinned/router-weights.json": "9bab6f5016c77d383d9f35897d5360b67868b841d6809e23966de204d1ea2e97",
-  "router-pin.json": "27f8f620bdc9b6c98edf84ae55d64957736c4843be8eeabbe1e2f62e09d305cb",
+  "pinned/router-weights.json": "85debe8700ddd768737cfe627a82fa86beb350983763581b7e4d730024e93546",
+  "router-pin.json": "fea734fb1d5f88e1370999689c32a75ed3212c1364a3209a0eedaddc22f68f08",
   "scripts/check_submission.py": "6018f88d709b503209c3121462bf6638cf4db826101b96bdd44cd2ef60828af7",
   "scripts/gen_manifest.py": "dd0621002ca365ab3a2f20a0e31effd35af98d7373d6e00ab26e8e372129bf43",
   "scripts/self_score.sh": "930a1fdda39695a84902a5e6e702ab427ef90c880acc7fdce3782ee664697a33"
