@@ -11,7 +11,7 @@
  "cost_ok": true,
  "tier": "major-delta",
  "passed": true,
- "transcript_sha256": "d53f13e6bf44372bc5e86729ce49c3b191ac0d0736bf13b4097e5c42d4317e54",
+ "transcript_sha256": "27ad199c5f2c77c917452936119cd3919ec3aae06c72153fa798c58df0a20c02",
  "task_summary": [
   {
    "task_id": "dev-reasoning-0000",
