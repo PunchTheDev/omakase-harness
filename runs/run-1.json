@@ -1,0 +1,3618 @@
+{
+ "competition": "oc-harness",
+ "split": "dev",
+ "seed": 1,
+ "n_tasks": 450,
+ "accuracy": 0.9333,
+ "baseline_accuracy": 0.8978,
+ "delta": 0.0356,
+ "p_value": 3.1e-05,
+ "cost_per_task": 0.0384,
+ "cost_ok": true,
+ "tier": "major-delta",
+ "passed": true,
+ "transcript_sha256": "561ce9044a40e640cecd99e6589e2e027910f8da775e5269e12ec2d5befe1af1",
+ "pr": 1,
+ "task_summary": [
+  {
+   "task_id": "dev-reasoning-0000",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0001",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0002",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0003",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0004",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0005",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0006",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0007",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0008",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0009",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0010",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0011",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0012",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0013",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0014",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0015",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0016",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0017",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0018",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0019",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0020",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0021",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0022",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0023",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0024",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0025",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0026",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0027",
+   "suite": "reasoning",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0028",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0029",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0030",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0031",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0032",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0033",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0034",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0035",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0036",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0037",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0038",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0039",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0040",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0041",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0042",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0043",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0044",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0045",
+   "suite": "reasoning",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0046",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0047",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0048",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0707,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-reasoning-0049",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0050",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0051",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0052",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0053",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0054",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0055",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0056",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0057",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0058",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0707,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-reasoning-0059",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0060",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0061",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0062",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0063",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0064",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0065",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0066",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0067",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0068",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0069",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0070",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0071",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0072",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0073",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0074",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0075",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0076",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0077",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0078",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0079",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0080",
+   "suite": "reasoning",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0081",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0082",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0083",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0084",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0085",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0086",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0087",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0088",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0089",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0090",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0091",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0092",
+   "suite": "reasoning",
+   "correct": false,
+   "tokens": 83,
+   "cost": 0.0707,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-reasoning-0093",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0707,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-reasoning-0094",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0095",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0096",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0097",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0098",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0099",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0100",
+   "suite": "reasoning",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0101",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0102",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0103",
+   "suite": "reasoning",
+   "correct": false,
+   "tokens": 84,
+   "cost": 0.0714,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-reasoning-0104",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0707,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-reasoning-0105",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0106",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0107",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0108",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0109",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0110",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0111",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0112",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0113",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0114",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0115",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0116",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0117",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0118",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0119",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0120",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0121",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0707,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-reasoning-0122",
+   "suite": "reasoning",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0123",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0124",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0125",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0126",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0127",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0128",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0129",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0130",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0131",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0132",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0133",
+   "suite": "reasoning",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0134",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0135",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0136",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0137",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0138",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0139",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0140",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0141",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0142",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0143",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0707,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-reasoning-0144",
+   "suite": "reasoning",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0145",
+   "suite": "reasoning",
+   "correct": false,
+   "tokens": 83,
+   "cost": 0.0707,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-reasoning-0146",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0147",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0148",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-reasoning-0149",
+   "suite": "reasoning",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.041,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0000",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0001",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0002",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0003",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0004",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0005",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0006",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0007",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0008",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0009",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0010",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0011",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0012",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0013",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0014",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0015",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0016",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0017",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0018",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0019",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0020",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0021",
+   "suite": "math",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0623,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-math-0022",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0023",
+   "suite": "math",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0024",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0025",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0026",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0027",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0028",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0029",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0030",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0031",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0032",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0033",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0034",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0035",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0036",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0037",
+   "suite": "math",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0038",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0039",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0040",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0041",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0042",
+   "suite": "math",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0043",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0044",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0045",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0046",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0287,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0047",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0048",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0049",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0050",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0051",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0052",
+   "suite": "math",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0053",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0054",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0055",
+   "suite": "math",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0056",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0057",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0058",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0059",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0060",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0061",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0062",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0063",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0064",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0065",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0066",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0067",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0068",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0069",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0070",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0071",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0072",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0073",
+   "suite": "math",
+   "correct": false,
+   "tokens": 84,
+   "cost": 0.063,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-math-0074",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0075",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0076",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0077",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0078",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0079",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0080",
+   "suite": "math",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0623,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-math-0081",
+   "suite": "math",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0082",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0083",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0084",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0085",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0086",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0087",
+   "suite": "math",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0088",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0089",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0090",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0091",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0092",
+   "suite": "math",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0623,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-math-0093",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0094",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0095",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0096",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0097",
+   "suite": "math",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0098",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0099",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0100",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0101",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0102",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0103",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0104",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0105",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0106",
+   "suite": "math",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0623,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-math-0107",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0108",
+   "suite": "math",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0109",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0110",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0111",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0112",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0113",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0114",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0115",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0116",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0117",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0118",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0119",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0120",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0121",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0122",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0123",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0124",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0125",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0126",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0127",
+   "suite": "math",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0665,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-math-0128",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0129",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0130",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0131",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0132",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0133",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0134",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0135",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0136",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0137",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0138",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0139",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0140",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0141",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0142",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0143",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0144",
+   "suite": "math",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0145",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0146",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0147",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0148",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0328,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-math-0149",
+   "suite": "math",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0000",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0001",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0002",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0003",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0004",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0005",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0006",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0007",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0008",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0009",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0010",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0011",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0665,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-code_qa-0012",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0013",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0014",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0015",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0016",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0017",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0018",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0019",
+   "suite": "code_qa",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0020",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0021",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0022",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0023",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0024",
+   "suite": "code_qa",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0025",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0026",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0027",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0028",
+   "suite": "code_qa",
+   "correct": false,
+   "tokens": 83,
+   "cost": 0.0665,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-code_qa-0029",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0030",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0287,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0031",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0032",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0033",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0034",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0035",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0036",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0037",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0038",
+   "suite": "code_qa",
+   "correct": false,
+   "tokens": 83,
+   "cost": 0.0665,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-code_qa-0039",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0040",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0041",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0042",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0043",
+   "suite": "code_qa",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0044",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0045",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0046",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0047",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0048",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0049",
+   "suite": "code_qa",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0050",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0051",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0052",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0053",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0054",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0055",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0056",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0057",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0058",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0059",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0060",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0061",
+   "suite": "code_qa",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0062",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0063",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0064",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0065",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0066",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0067",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0068",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0069",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0070",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0071",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0072",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0073",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0074",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0075",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0665,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-code_qa-0076",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0077",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0078",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0079",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0080",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0081",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0082",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0083",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0084",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0085",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0086",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0087",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0088",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0089",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0090",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0091",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0092",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0093",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0094",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0095",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0096",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0097",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0098",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0099",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0665,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-code_qa-0100",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0101",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0102",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0103",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0104",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0287,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0105",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0106",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0107",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0108",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0109",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0110",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0111",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0287,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0112",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0113",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0114",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0115",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0116",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0117",
+   "suite": "code_qa",
+   "correct": false,
+   "tokens": 83,
+   "cost": 0.0665,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-code_qa-0118",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0665,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-code_qa-0119",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0120",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0121",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0122",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0123",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0124",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0125",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0126",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0127",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0128",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 83,
+   "cost": 0.0665,
+   "n_steps": 2
+  },
+  {
+   "task_id": "dev-code_qa-0129",
+   "suite": "code_qa",
+   "correct": false,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0130",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0131",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0132",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0133",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0134",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0135",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0136",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0137",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0138",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0139",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0140",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0141",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0142",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0143",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0144",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0145",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0146",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0147",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0148",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  },
+  {
+   "task_id": "dev-code_qa-0149",
+   "suite": "code_qa",
+   "correct": true,
+   "tokens": 41,
+   "cost": 0.0369,
+   "n_steps": 1
+  }
+ ]
+}
