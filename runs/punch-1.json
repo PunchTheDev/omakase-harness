@@ -9,9 +9,8 @@
  "p_value": 0.0,
  "cost_per_task": 0.0387,
  "cost_ok": true,
- "tier": "major-delta",
  "passed": true,
- "transcript_sha256": "8d549f42a0d60a3d47e9133e5adf2d7fc0029984a9f78fbd9560fa17f84ed1f9",
+ "transcript_sha256": "f4801c7b86c789c9cae80ad9910742dabf44e5223952c40932e163209f7f1b73",
  "task_summary": [
   {
    "task_id": "dev-reasoning-0000",

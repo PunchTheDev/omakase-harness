@@ -8,8 +8,9 @@ exactly. Never guess schemas. Stop at HUMAN steps and ask your operator.
 `harness/` is a shared orchestration system that runs benchmark tasks using the
 pinned champion router (from [omakase-router](../omakase-router)) and the fixed worker
 pool. You PR an improvement to `harness/`; it merges iff it beats current main
-with paired statistical significance within the cost band. Reward scales with
-the attested delta (tier labels), held king-of-the-hill until the next merge.
+with paired statistical significance within the cost band. Any provable win —
+regardless of size — takes the `champion` label king-of-the-hill style and
+streams emissions until the next merge takes it.
 
 ## 1. Prerequisites
 
@@ -38,15 +39,15 @@ Identical to [omakase-router MINER-AGENT.md §1](../omakase-router/MINER-AGENT.m
 
 - Verification passes: catch wrong drafts, re-route to a second opinion.
 - Confidence-aware escalation: spend budget only where the pool disagrees.
-- Cost: main's `cost_per_task` is the denominator — cheaper calls at equal
-  accuracy also tier (cost band is +15%).
+- Cost: main's `cost_per_task` is the denominator — the cost band is +15%, so
+  accuracy gains can't be bought with unlimited spend.
 - The per-suite champion weaknesses are published on the dashboard's gap
   analysis; that list is the intended attack surface.
 
 ## 4. Iterate → check → submit
 
 ```bash
-scripts/self_score.sh          # delta vs main + tier; exit 0 = would merge
+scripts/self_score.sh          # delta vs main + verdict; exit 0 = would merge
 scripts/check_submission.py    # gates 1-3 preflight
 ```
 
@@ -55,17 +56,15 @@ per `payload-schema.json` in the body, never edit the PR after opening
 (freeze rule). Limits: 1 rerun/24h, 1 open PR, credibility decay — identical
 to Router.
 
-## 5. Tiers (from `omakase-harness.config.json`)
+## 5. The bar (one rule, same as Router)
 
-| Tier | Paired delta | Multiplier |
-|---|---|---|
-| breakthrough | ≥ 8pp | 2.0 |
-| major-delta | ≥ 3pp | 1.0 |
-| minor-delta | > 0, significant | 0.3 |
-
-All tiers require p < 0.05 (paired McNemar vs. main, identical tasks + seeds)
-and cost within band. Your tier label streams emissions until the next merge
-strips it.
+Beat main with **paired statistical significance** (McNemar, p < 0.05,
+identical tasks + seeds) within the cost band. That's it — **any provable
+improvement wins, regardless of size**. Significance is the spam filter: a
+gain must exceed run-to-run variance to prove itself, so noise can't take the
+crown. Winning earns the `champion` label (multiplier 1.0 in
+`omakase-harness.config.json`), which streams emissions until the next merge
+takes it.
 
 ## 6. Reject codes
 

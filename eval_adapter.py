@@ -35,8 +35,6 @@ import harness  # noqa: E402 — the mutable package under test
 
 BASELINE_PATH = os.path.join(ROOT, "runs", "main-baseline.json")
 
-# Delta tiers: label -> (min accuracy delta, gittensor label multiplier)
-TIERS = [("breakthrough", 0.08, 2.0), ("major-delta", 0.03, 1.0), ("minor-delta", 0.0, 0.3)]
 COST_TOLERANCE = 1.15
 
 
@@ -116,12 +114,6 @@ def run_harness(pool: Pool, split: str, seed: int, per_suite: int) -> list[TaskR
     return results
 
 
-def tier_for(delta: float, significant: bool) -> str | None:
-    if not significant:
-        return None
-    return next((label for label, floor, _ in TIERS if delta >= floor), None)
-
-
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--pool", required=True)
@@ -154,9 +146,12 @@ def main() -> int:
     if (base["split"], base["seed"], base.get("per_suite", 40)) != (args.split, args.seed, args.per_suite):
         raise SystemExit("baseline was computed for a different (split, seed, per_suite)")
 
+    # King-of-the-hill, same rule as Router: ANY positive delta with paired
+    # significance (in cost band) wins — significance IS the spam filter, since
+    # a gain must exceed run-to-run variance to prove itself. No size tiers.
     cmp_ = stats.compare(vector, [bool(x) for x in base["vector"]])
     cost_ok = axes.cost_per_task <= base["axes"]["cost_per_task"] * COST_TOLERANCE
-    tier = tier_for(cmp_.delta, cmp_.significant and cost_ok)
+    passed = cmp_.significant and cmp_.delta > 0 and cost_ok
 
     blob = {
         "competition": "omakase-harness",
@@ -164,7 +159,7 @@ def main() -> int:
         "accuracy": round(axes.accuracy, 4), "baseline_accuracy": round(base["axes"]["accuracy"], 4),
         "delta": round(cmp_.delta, 4), "p_value": round(cmp_.p_value, 6),
         "cost_per_task": round(axes.cost_per_task, 4), "cost_ok": cost_ok,
-        "tier": tier, "passed": tier is not None,
+        "passed": passed,
     }
     tx = transcripts.build(tasks, results, args.seed,
                            header={"competition": "omakase-harness", "split": args.split, "seed": args.seed})
@@ -180,8 +175,8 @@ def main() -> int:
 
     print(f"accuracy {blob['accuracy']} vs main {blob['baseline_accuracy']} "
           f"(Δ {blob['delta']:+}, p={blob['p_value']}) cost_ok={cost_ok}")
-    print(f"verdict: {'PASS — tier ' + tier if tier else 'FAIL — no significant in-band gain'}")
-    return 0 if tier else 1
+    print(f"verdict: {'PASS — would take the crown' if passed else 'FAIL — no significant in-band gain'}")
+    return 0 if passed else 1
 
 
 if __name__ == "__main__":

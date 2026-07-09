@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Self-score the current harness/ against main's baseline — the same delta-tier
-# judgment the canonical rerun applies. Boots a throwaway mock pool.
+# Self-score the current harness/ against main's baseline — the same
+# king-of-the-hill judgment the canonical rerun applies. Boots a throwaway mock pool.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 EVAL=../omakase-eval

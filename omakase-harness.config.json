@@ -10,17 +10,13 @@
     "cost_tolerance": 1.15,
     "significance_alpha": 0.05
   },
-  "delta_tiers": {
-    "breakthrough": {"min_delta": 0.08, "multiplier": 2.0},
-    "major-delta": {"min_delta": 0.03, "multiplier": 1.0},
-    "minor-delta": {"min_delta": 0.0, "multiplier": 0.3, "note": "still requires paired significance"}
-  },
   "gittensor_repo_config": {
     "weight": 0.5,
     "trusted_label_pipeline": true,
+    "label_multipliers": {"champion": 1.0},
     "default_label_multiplier": 0.0,
     "fixed_base_score": 1.0,
-    "note": "tier label held king-of-the-hill style until the next merge strips it"
+    "note": "king-of-the-hill, same as Router: any significant in-band win takes the crown and holds it until the next merge"
   },
   "miner_limits": {
     "prs_per_24h_per_hotkey": 1,

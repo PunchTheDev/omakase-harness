@@ -1,8 +1,8 @@
 # omakase-harness — the Harness orchestration-system competition
 
 One shared harness, continuously improved. PR a change to `harness/` that
-beats main on the benchmark with paired significance; reward scales with the
-attested delta and streams until the next merge.
+beats main on the benchmark with paired significance; any provable win takes
+the crown and streams emissions until the next merge takes it.
 
 - **Humans:** read [omakase-router's quickstart](../omakase-router/docs/quickstart.md),
   then [MINER-AGENT.md](MINER-AGENT.md) §2–5 for what differs here.
@@ -12,7 +12,7 @@ attested delta and streams until the next merge.
   [MINER-AGENT.md](MINER-AGENT.md) and [omakase-harness.config.json](omakase-harness.config.json).
 
 ```bash
-scripts/self_score.sh          # Δ vs main + tier verdict
+scripts/self_score.sh          # Δ vs main + verdict; exit 0 = would merge
 scripts/check_submission.py    # gates 1-3 preflight
 ```
 
