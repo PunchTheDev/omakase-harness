@@ -1,7 +1,6 @@
 {
  "competition": "omakase-harness",
  "split": "dev",
- "seed": 1,
  "n_tasks": 750,
  "accuracy": 0.9267,
  "baseline_accuracy": 0.884,
@@ -10,7 +9,8 @@
  "cost_per_task": 0.0387,
  "cost_ok": true,
  "passed": true,
- "transcript_sha256": "f4801c7b86c789c9cae80ad9910742dabf44e5223952c40932e163209f7f1b73",
+ "seed": 1,
+ "transcript_sha256": "3ca0e48fe034b8ad5f6d187e04704c2389cc246e36427dcc8d08444b69bf5936",
  "task_summary": [
   {
    "task_id": "dev-reasoning-0000",

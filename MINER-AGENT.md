@@ -25,15 +25,31 @@ Identical to [omakase-router MINER-AGENT.md §1](../omakase-router/MINER-AGENT.m
 - `harness` must export `run_task(router, view, pool, budget) -> str` — the
   final answer text. See `harness/__init__.py` for the full contract.
 - `view` is redacted (id, suite, rendered prompt). You never see answers or
-  split seeds, grading is central, and tokens/cost are metered by the locked
-  adapter — self-reporting nothing is the design.
+  split seeds, grading is central, and tokens/cost are metered by the trusted
+  parent — self-reporting nothing is the design.
 - The router is opaque; workers are reachable **only** through
-  `pool.chat(worker, system, user)`. Network/process primitives and
-  answer-reconstruction primitives (suites generators, mock internals, file
-  I/O, dynamic imports) in `harness/` are a static-gate reject
-  (`banned-primitive`). Dependencies are locked; propose new ones in an issue.
-- Budgets are enforced by the pool wrapper. Blowing `max_turns`/`max_tokens`
-  forfeits the task — build inside them.
+  `pool.chat(worker, system, user)`. Budgets are enforced on measured truth, not
+  on your word: blowing `max_turns`/`max_tokens` forfeits the task.
+
+### Your code runs in a sandbox
+
+`harness/` executes in an isolated child process, not inside the scorer. Its
+`sys.path` is the sandbox root, its environment is scrubbed, and it has exactly
+two capabilities — `pool.chat` and `router.decide` — both served by the parent.
+Practical consequences:
+
+- **Importable:** `omakase_eval.templates`, `omakase_eval.actions`, the stdlib.
+- **Not importable:** `omakase_eval.suites` / `datasets` / `engine` — the answer
+  generators simply are not on the path (`ModuleNotFoundError`). Nothing to
+  reflect into; there is no seed in scope to regenerate tasks with either.
+- **No network, no writes, no secrets.** In gate rounds the child runs with no
+  network namespace, a read-only filesystem, and as `nobody`.
+- A crash, a hang, or a budget blow-out forfeits **that one task** (answer `""`),
+  not the run. Timeouts are wall-clock per task.
+- The `banned-primitive` static check still runs first, but only as a fast, cheap
+  rejection — it is not what stops you. The sandbox is.
+
+Dependencies are locked; propose new ones in an issue.
 
 ## 3. Where gains live (targeting intel, kept honest by the dashboard)
 
