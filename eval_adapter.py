@@ -74,19 +74,38 @@ def main() -> int:
     ap.add_argument("--out")
     ap.add_argument("--frontier")
     ap.add_argument("--transcripts", help="dir for the content-addressed per-task transcript")
+    ap.add_argument("--harness-dir", default=HARNESS_DIR,
+                    help="the harness/ package to evaluate; the maintainer points this at the PR's copy "
+                         "while running THIS (trusted) adapter, so a tampered adapter in the PR is never run")
+    ap.add_argument("--baseline", default=BASELINE_PATH,
+                    help="main-baseline path; the maintainer passes its own trusted copy, not the PR's")
     ap.add_argument("--sandbox", default="process", choices=("process", "docker"),
                     help="isolation for the untrusted harness; docker adds no-network + read-only FS")
     ap.add_argument("--sandbox-timeout", type=float, default=60.0, help="wall-clock seconds per task")
+    ap.add_argument("--allow-unisolated-gate", action="store_true",
+                    help="permit --sandbox process on a private split — ONLY on a runner that holds "
+                         "no signing key and no seed on disk (the child shares the host uid there)")
     args = ap.parse_args()
 
     seed = resolve_seed(args)
     public = args.split == PUBLIC_SPLIT
 
+    # Process mode runs the harness at the host uid with the host filesystem and
+    # network reachable — on a gate box that means the child can read the seed off
+    # /proc/<parent>/environ and the signing key off disk. Refuse it on a private
+    # split unless the operator asserts the host is disposable (mirrors Punch).
+    if not public and args.sandbox != "docker" and not args.allow_unisolated_gate:
+        raise SystemExit(
+            f"split {args.split!r} is private: run with --sandbox docker, or --allow-unisolated-gate "
+            "only on a runner holding no key and no seed on disk. Refusing to run untrusted harness "
+            "code at host privilege beside the gate seed."
+        )
+
     pool = Pool.from_config(args.pool)
     tasks = suites.generate_split(args.split, seed, args.per_suite)
     cfg = sandbox.SandboxConfig(mode=args.sandbox, per_task_timeout_s=args.sandbox_timeout)
     results, forfeits = sandbox.run_harness_split(
-        HARNESS_DIR, load_pinned_router(), tasks, pool, seed, args.split, Budget(), cfg)
+        args.harness_dir, load_pinned_router(), tasks, pool, seed, args.split, Budget(), cfg)
     if forfeits:
         print(f"{len(forfeits)} task(s) forfeited: {'; '.join(forfeits[:3])}"
               + (" …" if len(forfeits) > 3 else ""), file=sys.stderr)
@@ -96,8 +115,8 @@ def main() -> int:
     fingerprint = suites.split_fingerprint(args.split, seed)
 
     if args.rebaseline:
-        os.makedirs(os.path.dirname(BASELINE_PATH), exist_ok=True)
-        with open(BASELINE_PATH, "w") as f:
+        os.makedirs(os.path.dirname(args.baseline), exist_ok=True)
+        with open(args.baseline, "w") as f:
             # The seed is committed only for the public split; every split records
             # a fingerprint so a stale baseline is caught without leaking the seed.
             json.dump({"split": args.split, "seed": seed if public else None,
@@ -106,7 +125,7 @@ def main() -> int:
         print(f"main baseline stored: accuracy {axes.accuracy:.3f}")
         return 0
 
-    with open(BASELINE_PATH) as f:
+    with open(args.baseline) as f:
         base = json.load(f)
     if (base["split"], base.get("per_suite", 40)) != (args.split, args.per_suite):
         raise SystemExit("baseline was computed for a different (split, per_suite)")

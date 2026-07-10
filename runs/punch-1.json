@@ -10,7 +10,7 @@
  "cost_ok": true,
  "passed": true,
  "seed": 1,
- "transcript_sha256": "3ca0e48fe034b8ad5f6d187e04704c2389cc246e36427dcc8d08444b69bf5936",
+ "transcript_sha256": "dd4948e31bf6504dd96e95b5a6f7c64cc453a354bcb3aab8c62d2ebe66ba5a13",
  "task_summary": [
   {
    "task_id": "dev-reasoning-0000",
